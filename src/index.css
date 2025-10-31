@@ -5,9 +5,32 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  line-height: 1.6;
+  padding-top: 64px; /* space for fixed navbar */
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+/* General spacing */
+main > section,
+main .container.py-5 {
+  scroll-margin-top: 72px;
+}
+
+/* Links */
+a {
+  transition: opacity .2s ease;
+}
+a:hover {
+  opacity: .85;
+}
+
+/* Images */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
 }

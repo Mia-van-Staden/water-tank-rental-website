@@ -17,7 +17,7 @@ const App: React.FC = () => {
   return (
     <Router>
       <Navbar />
-      <div className="container mt-4">
+      <main>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/problem-opportunity" element={<ProblemOpportunity />} />
@@ -30,10 +30,11 @@ const App: React.FC = () => {
           <Route path="/references" element={<References />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
-      </div>
+      </main>
       <Footer />
     </Router>
   );
 };
 
 export default App;
+
